@@ -1,0 +1,9 @@
+<vnx_cfg>
+
+<vm name="ONOS" win="400,600,800,400" />
+<vm name="h1" win="800,0,600,400" />
+<vm name="h2" win="600,600,600,400" status="minimized"/>
+<vm name="h3" win="0,0,600,400"/>
+<vm name="h4" win="600,100,600,400" status="minimized"/>
+<vm name="h5" win="300,500,600,400" status="minimized"/>
+</vnx_cfg>

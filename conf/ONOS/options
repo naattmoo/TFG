@@ -1,0 +1,2 @@
+ONOS_USER=root
+ONOS_APPS="drivers,openflow,vpls"

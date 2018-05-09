@@ -1,0 +1,60 @@
+{
+  "ports": {
+    "of:0000000000000001/4": {
+      "interfaces": [
+        {
+          "name": "net0-4"
+        }
+      ]
+    },
+     "of:0000000000000001/5": {
+      "interfaces": [
+        {
+          "name": "net0-5",
+          "vlan": "200"
+        }
+      ]
+    },
+    "of:0000000000000002/3": {
+      "interfaces": [
+        {
+          "name": "net1-3",
+          "vlan": "300"
+        }
+      ]
+    },
+    "of:0000000000000003/4": {
+      "interfaces": [
+        {
+          "name": "net2-4"
+        }
+      ]
+    },
+    "of:0000000000000004/3": {
+      "interfaces": [
+        {
+          "name": "net3-3",
+          "vlan": "500"
+        }
+      ]
+    }
+  },
+  "apps" : {
+    "org.onosproject.vpls" : {
+      "vpls" : {
+        "vplsList" : [
+          {
+            "name" : "VPLS1",
+            "interfaces" : ["net0-4", "net2-4"],
+	    "encapsulation" : "vlan"
+          },
+          {
+            "name" : "VPLS2",
+            "interfaces" : ["net0-5", "net1-3","net3-3"]
+            
+          }
+        ]
+      }
+    }
+  }
+}

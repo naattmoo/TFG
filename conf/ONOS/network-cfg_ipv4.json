@@ -3,7 +3,8 @@
     "of:0000000000000001/4": {
       "interfaces": [
         {
-          "name": "net0-4"
+          "name": "net0-4",
+          "vlan": "100"
         }
       ]
     },
@@ -26,7 +27,8 @@
     "of:0000000000000003/4": {
       "interfaces": [
         {
-          "name": "net2-4"
+          "name": "net2-4",
+          "vlan": "400"
         }
       ]
     },
@@ -45,8 +47,7 @@
         "vplsList" : [
           {
             "name" : "VPLS1",
-            "interfaces" : ["net0-4", "net2-4"],
-	    "encapsulation" : "vlan"
+            "interfaces" : ["net0-4", "net2-4"]
           },
           {
             "name" : "VPLS2",
